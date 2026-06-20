@@ -1,0 +1,11 @@
+name: MoChiThirst
+version: '${version}'
+
+main: org.moChiThirst.MoChiThirst
+api-version: '1.21'
+load: STARTUP
+
+commands:
+  thirst:
+    description: MoChiThirst main command
+    usage: /thirst <args>

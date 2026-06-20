@@ -1,0 +1,34 @@
+# Thanh khát tối đa (mặc định = 20)
+thirstMax: 20
+# Thời gian giảm thanh khát (20 = 1s)
+thirstLost: 600
+
+# Bắt đầu gây sát thương khi thanh khát ở mức này
+damageStart: 1
+# Gây sát thương khi khát (1 = nửa tim)
+damageAmount: 1
+# Tần suất gây sát thương khi khát (20 = 1s)
+damageInterval: 100
+
+# Hiệu ứng khi bị khát
+thirstEffect:
+  # Hiệu ứng bắt đầu khi thanh khát ở mức này
+  thirstLevel: 5
+  effects:
+    - "slowness 0"
+    - "nausea 0"
+
+# Hồi thanh khát từ nguồn nào
+drink:
+  water:
+    # Hồi lại mức khát
+    thirstRecovery: 3
+    # "<tên hiệu ứng> <cấp>(0=1,1=2,...) <hiệu lực>(20=1s) <tỷ lệ>(0.10=10%)"
+    effects:
+      - "poison 0 80 0.25"
+      - "hunger 0 200 0.10"
+  potion:
+    thirstRecovery: 3
+    effects:
+      - "poison 0 80 0.25"
+      - "hunger 0 200 0.10"
